@@ -38,10 +38,11 @@ class MyApp extends ConsumerWidget {
     final currentUser = ref.watch(currentUserNotifierProvider);
 
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Music App',
-      theme: AppTheme.darkThemeMode,
-      home: currentUser == null ? const SignupPage() : const HomePage(),
-    );
+  debugShowCheckedModeBanner: false,
+  title: 'Music App',
+  theme: AppTheme.darkThemeMode,
+  home: currentUser == null ? const SignupPage() : const HomePage(),
+);
+
   }
 }
